@@ -40,3 +40,22 @@
 p{
     font-size: 1.2em;
 }
+
+button{
+    background-color: rgb(43, 226, 104);
+    height: 45px;
+    width: 80px;
+}
+
+.cuadro{
+    display: flex;
+    width: 600px;
+    height: 400px;
+}
+
+
+
+.imagen{
+    width: 500px;
+    padding: 20px;
+}
