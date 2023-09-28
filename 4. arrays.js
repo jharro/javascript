@@ -21,3 +21,16 @@ misPalabras.push('naranja')
 //Cada tipo de datos teiene acceso a sus propios métodos, por ejemplo..
 let miNombre="Juanito"
 console.log(miNombre.toUpperCase())
+
+//igual los números
+let miNumero=29.54
+console.log(miNumero.toFixed())
+
+//Vamos a eliminar un elemento de un array. Recibe dos argumentos. el primero es el índice que quiero
+//eliminar y el segundo es cúantos elementos quiero eliminar a partir de ese índice
+misPalabras.splice(1,1)
+//Vamos a acceder a la segunda especie de misMascotas
+console.log(misMascotas[1].especie)
+//To do lo que debes saber es que un array es una colección de elementos
+//Ejercicio: Agregar una tercera mascota al array misMascotas
+misMascotas.push({nombre:"Tony",especie:'Ave'})
