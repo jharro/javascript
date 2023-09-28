@@ -3,6 +3,11 @@
     border: 0;
 }
 
+#titulo-ppal{
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: rgb(15, 216, 223);
+}
 .caja{
     /* We first create a flex layout context */
   display: flex;
