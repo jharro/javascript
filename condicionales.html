@@ -1,25 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Condicionales</title>
     <link rel="stylesheet" href="/estilos/estilos.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <script src="js/scripts.js"></script>
 </head>
+
 <body>
-    <img src="imagenes/condicional.png" alt="" height="500" width="auto">
-    <div class="contenedor">
-        
+    <div class="container">
+        <img src="imagenes/condicional.png" alt="" height="500" width="auto">
+
+
         <p>
-            Supongamos que tenemos un negocio donde vendemos futas, y si se compran 10 o más mostrar al cliente el mensaje "Felicitaciones" o "Lo sentimos, es una cantidad muy pequeña para un domicilio."
+            Supongamos que tenemos un negocio donde vendemos futas, y si se compran 10 o más mostrar al cliente el
+            mensaje "Felicitaciones" o "Lo sentimos, es una cantidad muy pequeña para un domicilio."
             <br> <br>
-            
 
 
 
-            
+
+
         </p>
         <p>
             Otro tipo de decisiones...repeticiones <br> <br>
@@ -31,54 +36,82 @@
                 }
             </code>
         </p>
-        
+
         <hr style="border:0px; border-top: 1px dotted red;">
         <br>
+    
+    <div id="texto">
+        <h3>Ejercicios</h3>
+        <p>Realice los siguientes ejercicios</p>
+
+        <!--
+        <h1>IMC</h1>
+
+        <label for="">Peso en kilos</label>
+        <input type="text" id="arg1" size="1">
+        <label for="">Estatura en metros</label>
+        <input type="text" id="arg2" size="1">
+        <input type="button" class="btn btn-primary" value="Calcular!" onclick="calc()">
+
+        <div id="result"></div>
+        <div id="mensaje">
+
         </div>
-        <div id="texto">
-            <h3>Ejercicios</h3>
-            <p>Realice los siguientes ejercicios</p>
-            <h1>IMC</h1>
 
-                <label for="">Peso en kilos</label>
-                <input type="text" id="arg1" size="1">
-                <label for="">Estatura en metros</label>
-                <input type="text" id="arg2" size="1">
-            <input type="button" class="btn btn-primary" value="Calcular!" onclick="calc()"> 
+        <script type="text/javascript">
 
-            <div id="result"></div>
-            <div id="mensaje">
+            function calc() {
+                var argOne = document.getElementById('arg1').value;
+                var argTwo = document.getElementById('arg2').value;
+                let imc = argOne / (argTwo ** 2)
 
-            </div>
-
-            <script type="text/javascript">
-
-            function calc(){
-            var argOne=document.getElementById('arg1').value; 
-            var argTwo=document.getElementById('arg2').value;
-            let imc=argOne/(argTwo**2)    
-
-            //var ans=(argOne*argTwo); 
-            document.getElementById('result').innerHTML= 'IMC =' + imc+'.';
-            const mensajeIMC=document.getElementById('mensaje')
-            if (imc<18) {
-                mensajeIMC.innerHTML='Peso bajo'
-            } else {
-                mensajeIMC.innerHTML='Peso normal'
-            }
+                //var ans=(argOne*argTwo); 
+                document.getElementById('result').innerHTML = 'IMC =' + imc + '.';
+                const mensajeIMC = document.getElementById('mensaje')
+                if (imc < 18) {
+                    mensajeIMC.innerHTML = 'Peso bajo'
+                } else {
+                    mensajeIMC.innerHTML = 'Peso normal'
+                }
             }
 
-            </script>
+        </script>
+        -->
         
+        <label for="">Nota</label>
+        <input type="text" id="nota">
+        <input type="button" class="btn btn-primary" value="Calcular!" onclick="calcular()">
+        <div id="result"></div>
+        <div id="mensaje">
+
         </div>
-        <button id="mostrar" onclick="mostrar()">Mostrar</button> 
-        <button id="ocultar" onclick="ocultar()">Ocultar</button> 
-        <button onclick="condicion()">Ejercicio</button> 
+        <script>
+            function calcular(){
+                let laNota=document.getElementById("nota").value
+                let resultadoFinal=document.getElementById("result")
+                if(laNota>0 && laNota<10){
+                    resultadoFinal.innerHTML=`Nota muy bajita...`
+                }
+                else{
+                    document.getElementById('result').innerHTML = `La nota es `+laNota
+                }
+                
+                
+            }
+        </script>
+
+    </div>
+    <button id="mostrar" onclick="mostrar()">Mostrar</button>
+    <button id="ocultar" onclick="ocultar()">Ocultar</button>
+    <button onclick="condicion()">Ejercicio</button>
     <a href="intro.html"><button>Regresar</button></a>
     <code>
         https://youtu.be/aU0czAVewCQ?si=HHF2vZ3NZpR8APJ8
 
         https://github.com/gustavoguanabara/javascript/blob/master/exercicios/ex012/index.html
     </code>
+    </div>
+
 </body>
+
 </html>

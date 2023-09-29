@@ -9,8 +9,10 @@
     <script src="js/scripts.js"></script>
 </head>
 <body>
+
+    <div class="container">
     <img src="imagenes/operadores.png" alt="" srcset="" height="500" width="auto">
-    <div class="contenedor">
+    <div>
         <p>
             ¿Qué es un operador y una expresión y para qué sirven? <br>
             Un operador es un símbolo que, tomando una srie de valores, los manipula y devuelve otro valor; mientras que las expresiones es el conunto del operador junto con los datos a manipular.
@@ -66,19 +68,21 @@
         <br>
         <div id="texto">
             <h3>Ejercicios</h3>
-            <p>Realice los siguientes ejercicios</p>
-            <h1>Calculadora</h1>
-            <input type="text" id="arg1" size="1"> X <input type="text" id="arg2" size="1">
-            <input type="button" value="Calcular!" onclick="calc()"> 
-            <div id="result"></div>
-            <script type="text/javascript">
-            function calc(){
-            var argOne=document.getElementById('arg1').value; 
-            var argTwo=document.getElementById('arg2').value;
-            var ans=(argOne*argTwo); 
-            document.getElementById('result').innerHTML=argOne + ' multiplicado por ' + argTwo + ' es igual a ' + ans;
-            }
-            </script>
+            <p>Realice los siguientes ejercicios en al consola del navegador y verifique cada resultado</p>
+            <ul>
+                <li>let a=5</li>
+                <li>let b=12</li>
+                <li>let c="5"</li>
+                <li>console.log(a==c)</li>
+                <li>console.log(a===c)</l1>
+                <li>console.log(a!=b)</li>
+                <li>console.log(a!==c)</li>
+                <li>console.log(a**b)</li>
+                <li>console.log(--b)</li>
+                <li>console.log(b=(a>b)?"Verdad":"Falsedad")</li>
+            </ul>
+            
+            
         
         </div>
         <button id="mostrar" onclick="mostrar()">Mostrar</button> 
@@ -89,5 +93,6 @@
     <code>
         https://github.com/gustavoguanabara/javascript/blob/master/exercicios/ex011/media.js
     </code>
+</div>
 </body>
 </html>

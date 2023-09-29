@@ -5,55 +5,72 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tipos de datos</title>
     <link rel="stylesheet" href="/estilos/estilos.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <script src="js/scripts.js"></script>
 </head>
 <body>
-    <img src="imagenes/tiposdedatos.jpg" alt="" srcset="" height="500" width="auto">
-</p>
-<br>
-<p>
-<code>
-    let nombre='Juan' <br>
-    let apellido <br>
-    let edad=23 <br>
-    let estatura=1.89 <br>
-    let valor=null <br>
-    let tieneMascota=false <br>
-    let deportes =['Ciclismo','Natación','Atletismo'] <br>
-    let datos {
-        nombre:'Sandra',
-        salario:2000
-    }
-</code>
-</p>
+<div class="container">
+
+   
+    <table class="table">
+        
+        <tbody>
+          <tr>
+            
+            <td><img src="imagenes/tiposdedatos.jpg" alt="" class="img-fluid" width="700" height="auto" >
+            </p></td>
+            <td><code>
+                let nombre='Juan' <br>
+                let apellido <br>
+                let edad=23 <br>
+                let estatura=1.89 <br>
+                let valor=null <br>
+                let tieneMascota=false <br>
+                let deportes =['Ciclismo','Natación','Atletismo'] <br>
+                let datos {
+                    nombre:'Sandra',
+                    salario:2000
+                }
+            </code>
+            <br><br>
+            <div class="card" style="width: 18rem;">
+                <img src="imagenes/typeof.JPG" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <p class="card-text">typeof es un operador JavaScript que al ser llamado sobre una variable, devuelve el tipo de dato que dicha variable contiene. Entre otras cosas, podemos utilizarlo para validar de parámetros de una función o para comprobar si una variable ha sido definida.</p>
+                </div>
+              </div>
+        
+        </td>
+            
+         
+        </tbody>
+      </table>
+    
+
+
 <hr style="border:0px; border-top: 1px dotted red;">
 <br>
 <br>
 <div id="texto">
     <h3>Ejercicios</h3>
-    <p>Realice los siguientes ejercicios</p>
-    <h1>Somando dois números</h1>
-    <button onclick="somar()">Iniciar a soma</button>
-    <section id="res">
-        <p>O resultado vem aqui...</p>
-    </section>
-    <script>
-    
-        function somar() {
-            let n1 = Number(window.prompt('Digite um número: '))
-            let n2 = Number(window.prompt('Digite outro número:'))
-            soma = n1 + n2
+    <p>Realice los siguientes ejercicios en la consola del navegador</p>
 
-            let res = document.querySelector('section#res')
-            res.innerHTML = `<p>A soma entre <mark>${n1}</mark> e <mark>${n2}</mark> é igual a <strong>${soma}</strong>!</p>`
-        }
-    </script>
+<code>
+    let x = 12345; <br>
+    console.log(typeof x) <br>
+    x = 'string'; <br>
+    console.log(typeof x) <br>
+    x = { key: 'value' }; <br>
+    console.log(typeof x) <br>
+</code>
+
+    
 
 </div>
 <button id="mostrar" onclick="mostrar()">Mostrar</button> 
 <button id="ocultar" onclick="ocultar()">Ocultar</button> 
 <button onclick="pedirDatos()">Ejercicio</button>
  <a href="intro.html"><button>Regresar</button></a>
-   
+</div>
 </body>
 </html>
