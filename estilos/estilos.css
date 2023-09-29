@@ -33,7 +33,7 @@
     background: tomato;
     padding: 5px;
     width: 200px;
-    height: 150px;
+    height: 80px;
     margin-top: 40px;
     line-height: 20px;
     color: white;
@@ -41,6 +41,8 @@
     font-size: 1.1em;
     text-align: center;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif, 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    border-radius: 3%;
+    
 }
 p{
     font-size: 1.2em;
@@ -63,4 +65,12 @@ button{
 .imagen{
     width: 500px;
     padding: 20px;
+}
+
+#texto{
+    display: none;
+}
+
+#ocultar{
+    display: none;
 }
