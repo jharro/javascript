@@ -37,12 +37,37 @@
         <div id="texto">
             <h3>Ejercicios</h3>
             <p>Realice los siguientes ejercicios</p>
-            <ul>
-              <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur magnam repellendus numquam placeat, reiciendis dolore adipisci enim, vero libero, optio molestiae fuga veniam quis necessitatibus inventore sint assumenda odit. Dolore?</li>
-              <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur magnam repellendus numquam placeat, reiciendis dolore adipisci enim, vero libero, optio molestiae fuga veniam quis necessitatibus inventore sint assumenda odit. Dolore?</li>
-              <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur magnam repellendus numquam placeat, reiciendis dolore adipisci enim, vero libero, optio molestiae fuga veniam quis necessitatibus inventore sint assumenda odit. Dolore?</li>
-              <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur magnam repellendus numquam placeat, reiciendis dolore adipisci enim, vero libero, optio molestiae fuga veniam quis necessitatibus inventore sint assumenda odit. Dolore?</li>
-            </ul>
+            <h1>IMC</h1>
+
+                <label for="">Peso en kilos</label>
+                <input type="text" id="arg1" size="1">
+                <label for="">Estatura en metros</label>
+                <input type="text" id="arg2" size="1">
+            <input type="button" value="Calcular!" onclick="calc()"> 
+
+            <div id="result"></div>
+            <div id="mensaje">
+
+            </div>
+
+            <script type="text/javascript">
+
+            function calc(){
+            var argOne=document.getElementById('arg1').value; 
+            var argTwo=document.getElementById('arg2').value;
+            let imc=argOne/(argTwo**2)    
+
+            //var ans=(argOne*argTwo); 
+            document.getElementById('result').innerHTML= 'IMC =' + imc+'.';
+            const mensajeIMC=document.getElementById('mensaje')
+            if (imc<18) {
+                mensajeIMC.innerHTML='Peso bajo'
+            } else {
+                mensajeIMC.innerHTML='Peso normal'
+            }
+            }
+
+            </script>
         
         </div>
         <button id="mostrar" onclick="mostrar()">Mostrar</button> 
@@ -51,6 +76,8 @@
     <a href="intro.html"><button>Regresar</button></a>
     <code>
         https://youtu.be/aU0czAVewCQ?si=HHF2vZ3NZpR8APJ8
+
+        https://github.com/gustavoguanabara/javascript/blob/master/exercicios/ex012/index.html
     </code>
 </body>
 </html>

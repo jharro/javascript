@@ -3,10 +3,22 @@
     border: 0;
 }
 
+body{
+    background-color: rgb(204, 206, 207);
+}
+
+#fecha{
+    font-size: 1.5em;
+    
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
 #titulo-ppal{
     text-align: center;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    color: rgb(15, 216, 223);
+    color: rgba(0, 3, 8, 0.5);
+    font-size: 2.5em;
+    
 }
 .caja{
     /* We first create a flex layout context */
@@ -73,4 +85,9 @@ button{
 
 #ocultar{
     display: none;
+}
+
+footer{
+    text-align: center;
+    font-family: cursive;
 }

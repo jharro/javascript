@@ -66,17 +66,27 @@
         <div id="texto">
             <h3>Ejercicios</h3>
             <p>Realice los siguientes ejercicios</p>
-            <ul>
-              <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur magnam repellendus numquam placeat, reiciendis dolore adipisci enim, vero libero, optio molestiae fuga veniam quis necessitatibus inventore sint assumenda odit. Dolore?</li>
-              <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur magnam repellendus numquam placeat, reiciendis dolore adipisci enim, vero libero, optio molestiae fuga veniam quis necessitatibus inventore sint assumenda odit. Dolore?</li>
-              <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur magnam repellendus numquam placeat, reiciendis dolore adipisci enim, vero libero, optio molestiae fuga veniam quis necessitatibus inventore sint assumenda odit. Dolore?</li>
-              <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur magnam repellendus numquam placeat, reiciendis dolore adipisci enim, vero libero, optio molestiae fuga veniam quis necessitatibus inventore sint assumenda odit. Dolore?</li>
-            </ul>
+            <h1>Calculadora</h1>
+            <input type="text" id="arg1" size="1"> X <input type="text" id="arg2" size="1">
+            <input type="button" value="Calcular!" onclick="calc()"> 
+            <div id="result"></div>
+            <script type="text/javascript">
+            function calc(){
+            var argOne=document.getElementById('arg1').value; 
+            var argTwo=document.getElementById('arg2').value;
+            var ans=(argOne*argTwo); 
+            document.getElementById('result').innerHTML=argOne + ' multiplicado por ' + argTwo + ' es igual a ' + ans;
+            }
+            </script>
         
         </div>
         <button id="mostrar" onclick="mostrar()">Mostrar</button> 
         <button id="ocultar" onclick="ocultar()">Ocultar</button>  
         <button onclick="condicion()">Ejercicio</button> 
     <a href="intro.html"><button>Regresar</button></a>
+
+    <code>
+        https://github.com/gustavoguanabara/javascript/blob/master/exercicios/ex011/media.js
+    </code>
 </body>
 </html>

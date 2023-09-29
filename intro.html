@@ -8,7 +8,31 @@
     <script src="/js//scripts.js"></script>
 </head>
 <body>
-    <h1 id="titulo-ppal">Javascript ADSO 2023</h1>
+   
+   
+     
+    <h1 id="titulo-ppal">JAVASCRIPT ADSO 2023</h1>
+    <div id="fecha">
+        
+      </div>
+    <script>
+        const fecha = new Date();
+        const añoActual = fecha.getFullYear();
+        let hoy=fecha.getDate()
+        const mesActual=fecha.getMonth()+1
+        const tiempoTranscurrido = Date.now();
+         hoy = new Date(tiempoTranscurrido);
+         
+         console.log(hoy.toDateString())
+         fechaDeHoy=hoy.toDateString()
+        const fechaHoy=document.getElementById('fecha').innerHTML=fechaDeHoy
+
+   /*     var ran
+ran = Math.round(Math.random()*50000)
+document.write("Usted es el visitante " + ran + " de esta página.")*/
+
+      </script>
+     
     <div class="caja">
         <div class="temas">
          <a href="consola.html"><p>1. Primer contacto con Javascript</p></a>   
@@ -62,7 +86,12 @@
         </div>
     </div>
    
-    
+    <br>
+    <hr style="border:0px; border-top: 1px dotted red;">
+
+    <footer>
+        <p>by Jhonnys Rodríguez</p>
+    </footer>
     
 </body>
 </html>
