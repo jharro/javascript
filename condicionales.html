@@ -20,11 +20,117 @@
             Supongamos que tenemos un negocio donde vendemos futas, y si se compran 10 o más mostrar al cliente el
             mensaje "Felicitaciones" o "Lo sentimos, es una cantidad muy pequeña para un domicilio."
             <br> <br>
+        </p>
+        <hr style="border:0px; border-top: 1px dotted red;">
+        <br>
+        <h2>Ejecución condicional: if, '?'</h2>
+        <p>
+            A veces necesitamos que, bajo condiciones diferentes, se ejecuten acciones diferentes.
+
+Para esto podemos usar la sentencia if y el “operador condicional” ?.
 
 
+        </p>
+        <h2>La sentencia "if"</h2>
+        <p>
+            La sentencia if(...) evalúa la condición en los paréntesis, y si el resultado es verdadero (true), ejecuta un bloque de código.
+            <br>
+            <code>
+                let year = prompt('¿En que año fué publicada la especificación ECMAScript-2015?', ''); <br>
 
+                if (year == 2015) <br>
+                    alert( '¡Estás en lo cierto!' );
+            </code>
+        </p>
+        <h3>Conversión Booleana</h3>
+        <p>
+            La sentencia if (…) evalúa la expresión dentro de sus paréntesis y convierte el resultado en booleano.
 
+Recordemos las reglas de conversión del capítulo Conversiones de Tipos:
 
+El número 0, un string vacío "", null, undefined, y NaN, se convierten en false. Por esto son llamados valores “falsos”.
+El resto de los valores se convierten en true, entonces los llamaremos valores “verdaderos”. <br>
+<br>
+Entonces, el código bajo esta condición nunca se ejecutaría: <br>
+<code>
+    if (0)  { <br> // 0 es falso
+        ... <br>
+      }
+</code>
+<br>
+…y dentro de esta condición siempre se ejecutará: <br>
+<code>
+    if (1) { <br> // 1 es verdadero
+        ... <br>
+      }
+</code>
+<br>
+<h3>La cláusula "else"</h3>
+        </p>
+        La sentencia if puede contener un bloque else (“si no”, “en caso contrario”) opcional. Este bloque se ejecutará cuando la condición sea falsa.
+
+        Por ejemplo: <br>
+        <code>
+            <br>
+            let year = prompt('¿En qué año fue descubierta América?', ''); <br>
+
+if (year == 1492) { <br>
+  alert( '¡Lo adivinaste, correcto!' ); <br>
+} else { <br>
+  alert( '¿Cómo puedes estar tan equivocado?' ); <br>
+} <br>
+        </code>
+        <h3>Operador ternanrio  '?'</h3>
+        <p>
+            A veces necesitamos que el valor que asignemos a una variable dependa de alguna condición.
+
+Por ejemplo: <br>
+<code>
+    let accessAllowed; <br>
+let age = prompt('¿Qué edad tienes?', ''); <br>
+
+if (age > 18) {<br>
+    accessAllowed = true;<br>
+} else { <br>
+    accessAllowed = false;<br>
+} <br>
+
+alert(accessAllowed);<br>
+</code>
+<p>
+    El “operador condicional” nos permite ejecutar esto en una forma más corta y simple.
+
+El operador está representado por el signo de cierre de interrogación ?. A veces es llamado “ternario” porque el operador tiene tres operandos, es el único operador de JavaScript que tiene esa cantidad.
+
+La Sintaxis es: <br>
+<code> <br>
+    let result = condition ? value1 : value2;
+</code>
+<br> <br>
+Se evalúa condition: si es verdadera entonces devuelve value1 , de lo contrario value2.
+
+Por ejemplo: <br> <br>
+<code>
+    let accessAllowed = (age > 18) ? true : false;
+</code>
+</p>
+<h3>Múltiples '?'</h3>
+<p>
+    Una secuencia de operadores de signos de interrogación ? puede devolver un valor que depende de más de una condición.
+
+Por ejemplo: <br>
+<code>
+    <br>
+    let edad = prompt('¿edad?', 18); <br>
+
+let message = (edad < 3) ? '¡Hola, bebé!' : <br>
+  (edad < 18) ? '¡Hola!' : <br>
+  (edad < 100) ? '¡Felicidades!' : <br>
+  '¡Qué edad tan inusual!'; <br>
+
+alert( message ); <br>
+</code>
+</p>
         </p>
         <p>
             Otro tipo de decisiones...repeticiones <br> <br>
@@ -37,6 +143,7 @@
             </code>
         </p>
 
+
         <hr style="border:0px; border-top: 1px dotted red;">
         <br>
     
@@ -44,7 +151,7 @@
         <h3>Ejercicios</h3>
         <p>Realice los siguientes ejercicios</p>
 
-        <!--
+        
         <h1>IMC</h1>
 
         <label for="">Peso en kilos</label>
@@ -76,7 +183,7 @@
             }
 
         </script>
-        -->
+        
         
         <label for="">Nota</label>
         <input type="text" id="nota">
@@ -101,6 +208,22 @@
         </script>
 
     </div>
+
+    <hr style="border:0px; border-top: 1px dotted red;">
+    <p>
+        Reescriba esta condición if usando el operador ternario '?': <br>
+        <code>
+            <br>
+            let result; <br>
+
+if (a + b < 4) { <br>
+  result = 'Debajo'; <br>
+} else { <br>
+  result = 'Encima'; <br>
+} <br>
+        </code>
+    </p>
+
     <button id="mostrar" onclick="mostrar()">Mostrar</button>
     <button id="ocultar" onclick="ocultar()">Ocultar</button>
     <button onclick="condicion()">Ejercicio</button>
